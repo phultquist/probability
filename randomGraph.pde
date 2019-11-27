@@ -1,3 +1,6 @@
+//Patrick Hultquist
+//Nov 2019
+
 int count = 0;
 int size = 800;
 int padding = 50;
@@ -18,7 +21,6 @@ void draw() {
   count++;
   background(255); 
   drawAxis();
-  //values.add(int(random(num)));
   float percent;
   values.add(simulate());
   percent = calcPercent();
@@ -34,11 +36,8 @@ void draw() {
     xValue = padding+(float(p)/float(count))*scale;
     yValue = percents.get(p)*scale;
     line(px, (size-padding)-py, xValue, (size-padding)-yValue);
-    //line(padding,size-padding,450,(size-padding)-(percents.get(percents.size()-1)*(scale)));
   }
   text(str(percent), size-padding, size-padding-percent*scale-10);
-  
-  //print(values);
 }
 
 void drawAxis(){
@@ -53,13 +52,7 @@ void drawAxis(){
 }
 
 float calcPercent(){
-  //println(values);
   int frequency = previousFrequency;
-  //for (int i = 0; i < values.size(); i++){
-  //  if(values.get(i) == 0){
-  //    frequency++;
-  //  }
-  //}
   if (values.get(values.size()-1) == 1) {
     frequency++;
   }
