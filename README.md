@@ -1,7 +1,12 @@
-# statFinder
+# Probability
 I made this for my stats class! Any function can be written in simluate() and the code will graph the experimental probability — or the percent of trials so far that have ended with a 1. 
 
-# current code
+## About
+After pondering about this for a while (about a year later), I realize probability wasn't the right name for this repository.
+
+This simulation technology simulates **The Law of Large Numbers**, which describes the result of repeating a probability experiment a large number of times.
+
+## current code
 The code that is in there is set up for this problem:
 
 100 passengers board an airplane with exactly 100 seats. Everyone has a ticket with an assigned seat number.
